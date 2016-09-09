@@ -101,11 +101,40 @@
 <!-- Third Container (Grid) -->
 <div id='where' class="container-fluid bg-3 text-center">    
   <h3 class="margin">Where To Find Me?</h3><br>
+  <head>
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.18.2/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+    <script src="http://openlayers.org/en/v3.18.2/build/ol.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+      
+      var map = new ol.Map({
+        target: 'map',
+        interactions: ol.interaction.defaults({mouseWheelZoom:false}),
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([-122.4194, 37.7749]),
+          zoom: 12
+        })
+      });
+    </script>
+
     <!-- Set height and width with CSS -->
-	<div id="googleMap" style="height:400px;width:100%;"></div>
+	<!-- <div id="googleMap" style="height:400px;width:100%;"></div> -->
 
 	<!-- Add Google Maps -->
-	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAATsKINXzNlXVV7U8VK7pzfY-SWXL3L1I&callback=initialize"></script>
+	<!-- <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAATsKINXzNlXVV7U8VK7pzfY-SWXL3L1I"></script>
 	<script>
 	var myCenter = new google.maps.LatLng(37.7749, -122.4194);
 
@@ -128,7 +157,7 @@
 	}
 
 	google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
+	</script> -->
 
 </div>
 

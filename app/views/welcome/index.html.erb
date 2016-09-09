@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">STXTS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">WHO</a></li>
+        <li><a href="#what">WHAT</a></li>
+        <li><a href="#where">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div id='who' class="container-fluid bg-1 text-center">
+  <h3 class="margin">Who Am I?</h3>
+  <img src="https://s3.amazonaws.com/pinterestedxst/FullSizeRender.jpg" class="img-responsive img-circle margin" style="display:inline" alt="ST" width="350" height="350">
+  <h3>I'm a developer!</h3>
+</div>
+
+<!-- Second Container -->
+<div id='what' class="container-fluid bg-2 text-center">
+  <h3 class="margin">What Programming Languages Do I Use?</h3>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="https://ee5817f8e2e9a2e34042-3365e7f0719651e5b8d0979bce83c558.ssl.cf5.rackcdn.com/python.png" class="img-rounded margin" alt="Image" height="300" width="300">
+      <p>Python for ETL & Data Analysis<br/> Crawling + Scraping</p>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="https://achievement-images.teamtreehouse.com/badges_SimpleFacebook_Stage1.png" class="img-rounded margin" alt="Image" height="300" width="300">
+      <p>Ruby on Rails for Full Stack Web Dev<br/> HTML + CSS + Javascript</p>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="http://www.thbs.com/images/THBS_Images/Inner_Banner_Images/thbs-nosql.png" class="img-rounded margin" alt="Image" height="300" width="300">
+      <p>MySQL, PostgreSQL & Sqlite3 for RDBMS<br/>MongoDB / Robomongo for NoSQL</p>
+    </div>
+  </div>
+</div>
+
+<!-- Third Container (Grid) -->
+<div id='where' class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Where To Find Me?</h3><br>
+   <!-- Set height and width with CSS -->
+	<div id="googleMap" style="height:400px;width:100%;"></div>
+
+	<!-- Add Google Maps -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+	var myCenter = new google.maps.LatLng(37.7749, -122.4194);
+
+	function initialize() {
+	var mapProp = {
+	center:myCenter,
+	zoom:12,
+	scrollwheel:false,
+	draggable:false,
+	mapTypeId:google.maps.MapTypeId.ROADMAP
+	};
+
+	var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+	var marker = new google.maps.Marker({
+	position:myCenter,
+	});
+
+	marker.setMap(map);
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</div>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>SONGTHAM TUNGKITKANCHAROEN</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

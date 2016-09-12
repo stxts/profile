@@ -41,6 +41,7 @@
       padding-bottom: 70px;
   }
   .navbar {
+      position: fixed;
       padding-top: 15px;
       padding-bottom: 15px;
       border: 0;
@@ -48,6 +49,9 @@
       margin-bottom: 0;
       font-size: 12px;
       letter-spacing: 5px;
+      width: 100%;
+      height: 70px;
+      z-index: 100;
   }
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
@@ -99,7 +103,7 @@
     </div>
     <div class="col-sm-4"> 
       <img src="http://s3.amazonaws.com/stxts-profile/sql-nosql.png" class="img-rounded margin" alt="Image" height="300" width="300">
-      <p>MySQL, PostgreSQL & Sqlite3 for RDBMS<br/>MongoDB + Robomongo for NoSQL</p><br/>
+      <p>MySQL, PostgreSQL & Sqlite3 for RDBMS<br/>MongoDB for NoSQL</p><br/>
     </div>
   </div>
 </div>
@@ -109,15 +113,15 @@
   <div class="row">
     <div class="col-sm-4">
       <img src="http://s3.amazonaws.com/stxts-profile/Linkedin_Shiny_Icon.svg_.png" class="img-rounded margin" alt="Image" height="300" width="300">
-      <h4><a href="http://www.linkedin.com/in/stxts">LinkedIn</a></h4><br/>
+      <a class="btn btn-primary btn-lg" href="http://www.linkedin.com/in/stxts" role="button">LinkedIn</a><br/>
     </div>
     <div class="col-sm-4"> 
       <img src="http://s3.amazonaws.com/stxts-profile/25231.png" class="img-rounded margin" alt="Image" height="300" width="300">
-      <h4><a href="http://www.github.com/stxts">GitHub</a></h4><br/>
+      <a class="btn btn-warning btn-lg" href="http://www.github.com/stxts" role="button">GitHub</a><br/>
     </div>
     <div class="col-sm-4"> 
       <img src="http://s3.amazonaws.com/stxts-profile/resume-icon-png-10.png" class="img-rounded margin" alt="Image" height="300" width="300">
-      <h4><a href="http://s3.amazonaws.com/stxts-profile/st_resume.pdf">Resume</a></h4>
+      <a class="btn btn-default btn-lg" href="http://s3.amazonaws.com/stxts-profile/st_resume.pdf" role="button">Resume</a>
     </div>
   </div>
 </div>

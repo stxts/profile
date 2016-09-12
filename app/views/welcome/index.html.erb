@@ -41,21 +41,31 @@
       padding-bottom: 70px;
   }
   .navbar {
-      position: fixed;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-      width: 100%;
-      height: 70px;
-      z-index: 100;
-  }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
-  }
+    position: fixed;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color:  !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
   </style>
 
 </head>
@@ -112,15 +122,15 @@
   <h3 class="margin">Where Is My LinkedIn, GitHub, & Resume?</h3>
   <div class="row">
     <div class="col-sm-4">
-      <img src="http://s3.amazonaws.com/stxts-profile/Linkedin_Shiny_Icon.svg_.png" class="img-rounded margin" alt="Image" height="300" width="300">
-      <a class="btn btn-primary btn-lg" href="http://www.linkedin.com/in/stxts" role="button">LinkedIn</a><br/>
+      <img src="http://s3.amazonaws.com/stxts-profile/Linkedin_Shiny_Icon.svg_.png" class="img-rounded margin" alt="Image" height="300" width="300"><br/>
+      <a class="btn btn-primary btn-lg" href="http://www.linkedin.com/in/stxts" role="button">LinkedIn</a><br/><br/>
     </div>
     <div class="col-sm-4"> 
-      <img src="http://s3.amazonaws.com/stxts-profile/25231.png" class="img-rounded margin" alt="Image" height="300" width="300">
-      <a class="btn btn-warning btn-lg" href="http://www.github.com/stxts" role="button">GitHub</a><br/>
+      <img src="http://s3.amazonaws.com/stxts-profile/25231.png" class="img-rounded margin" alt="Image" height="300" width="300"><br/>
+      <a class="btn btn-warning btn-lg" href="http://www.github.com/stxts" role="button">GitHub</a><br/><br/>
     </div>
     <div class="col-sm-4"> 
-      <img src="http://s3.amazonaws.com/stxts-profile/resume-icon-png-10.png" class="img-rounded margin" alt="Image" height="300" width="300">
+      <img src="http://s3.amazonaws.com/stxts-profile/resume-icon-png-10.png" class="img-rounded margin" alt="Image" height="300" width="300"><br/>
       <a class="btn btn-default btn-lg" href="http://s3.amazonaws.com/stxts-profile/st_resume.pdf" role="button">Resume</a>
     </div>
   </div>

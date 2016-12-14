@@ -17,6 +17,8 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
+
+
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -53,9 +55,12 @@ $(document).ready(function(){
 })
 
 
-var myCenter = new google.maps.LatLng(37.7749, -122.4194);
+// googleMap
+
+
 
 function initialize() {
+var myCenter = new google.maps.LatLng(37.7749, -122.4194);		
 var mapProp = {
 center:myCenter,
 zoom:12,
@@ -71,6 +76,7 @@ position:myCenter,
 });
 
 marker.setMap(map);
-}
+
 
 google.maps.event.addDomListener(window, 'load', initialize);
+}

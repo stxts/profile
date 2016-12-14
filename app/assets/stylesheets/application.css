@@ -72,4 +72,14 @@
     border-color: transparent;
     color: #fff !important;
 }
+
+#profile-pic {
+  display:inline;
+}
+
+#googleMap {
+  height:400px;
+  width:100%;
+}
+
   </style>

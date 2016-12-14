@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAATsKINXzNlXVV7U8VK7pzfY-SWXL3L1I"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -15,7 +16,7 @@
 <!-- First Container -->
 <div id='who' class="container-fluid bg-1 text-center">
   <h3>Who Am I?</h3><br/>
-      <img src="https://s3.amazonaws.com/stxts-profile/FullSizeRender.jpg" title="SONGTHAM TUNGKITKANCHAROEN" class="img-responsive img-circle margin" style="display:inline" alt="ST" width="350" height="350">
+      <img src="https://s3.amazonaws.com/stxts-profile/FullSizeRender.jpg" title="SONGTHAM TUNGKITKANCHAROEN" class="img-responsive img-circle margin" id="profile-pic" alt="ST" width="350" height="350">
   <h3>I'm a developer!</h3>
 </div>
 
@@ -56,35 +57,8 @@
   </div>
 </div>
 
- <!-- Set height and width with CSS -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-
 <!-- Add Google Maps -->
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAATsKINXzNlXVV7U8VK7pzfY-SWXL3L1I"></script>
-<script>
-var myCenter = new google.maps.LatLng(37.7749, -122.4194);
-
-function initialize() {
-var mapProp = {
-center:myCenter,
-zoom:12,
-scrollwheel:false,
-draggable:false,
-mapTypeId:google.maps.MapTypeId.ROADMAP
-};
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-position:myCenter,
-});
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-
+<div id="googleMap"></div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-5 text-center">

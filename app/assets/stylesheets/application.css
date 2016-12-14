@@ -81,3 +81,21 @@
   width:100%;
 }
 
+hr {
+  width: 300px;
+}
+
+.parent {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.big {
+    font-size: 17px;
+    font-style: italic;   
+}
+
+.small {
+    font-size: 10px;
+    font-style: italic;
+}

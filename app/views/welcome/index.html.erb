@@ -29,17 +29,17 @@
 <!-- Second Container -->
 <div id='what' class="container-fluid bg-2 text-center">
   <h3 class="margin">What Programming Languages Do I Use?</h3>
-  <div class="row" id="fancyContainer">
+  <div class="row">
     <div class="col-sm-4">
-      <img src="https://s3.amazonaws.com/stxts-profile/python.png" class="img-rounded margin" alt="Image" height="300" width="300">
+      <img src="https://s3.amazonaws.com/stxts-profile/python.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyContainer1">
       <p>Python for ETL & Data Manipulation<br/> Crawling + Scraping</p><br/>
     </div>
     <div class="col-sm-4"> 
-      <img src="https://s3.amazonaws.com/stxts-profile/ruby.png" class="img-rounded margin" alt="Image" height="300" width="300">
+      <img src="https://s3.amazonaws.com/stxts-profile/ruby.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyContainer2">
       <p>Ruby on Rails for Personal Projects<br/> HTML + CSS + Javascript</p><br/>
     </div>
     <div class="col-sm-4"> 
-      <img src="https://s3.amazonaws.com/stxts-profile/csharp.png" class="img-rounded margin" alt="Image" height="300" width="300">
+      <img src="https://s3.amazonaws.com/stxts-profile/csharp.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyContainer3">
       <p>C# .NET MVC for Work<br/>Visual Studio</p><br/>
     </div>
   </div>
@@ -47,17 +47,17 @@
 
 <div id='where' class="container-fluid bg-3 text-center">
   <h3 class="margin">Where Is My LinkedIn, GitHub, & Resume?</h3>
-  <div class="row" id="fancyLinks">
+  <div class="row">
     <div class="col-sm-4">
-      <img src="https://s3.amazonaws.com/stxts-profile/Linkedin_Shiny_Icon.svg_.png" class="img-rounded margin" alt="Image" height="300" width="300"><br/>
+      <img src="https://s3.amazonaws.com/stxts-profile/Linkedin_Shiny_Icon.svg_.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyLinks1"><br/>
       <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/stxts" role="button">LinkedIn</a><br/><br/>
     </div>
     <div class="col-sm-4"> 
-      <img src="https://s3.amazonaws.com/stxts-profile/25231.png" class="img-rounded margin" alt="Image" height="300" width="300"><br/>
+      <img src="https://s3.amazonaws.com/stxts-profile/25231.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyLinks2"><br/>
       <a class="btn btn-warning btn-lg" href="https://www.github.com/stxts" role="button">GitHub</a><br/><br/>
     </div>
     <div class="col-sm-4"> 
-      <img src="https://s3.amazonaws.com/stxts-profile/resume-icon-png-10.png" class="img-rounded margin" alt="Image" height="300" width="300"><br/>
+      <img src="https://s3.amazonaws.com/stxts-profile/resume-icon-png-10.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyLinks3"><br/>
       <a class="btn btn-default btn-lg" href="https://s3.amazonaws.com/stxts-profile/st_resume.pdf" role="button">Resume</a>
     </div>
   </div>
@@ -66,9 +66,13 @@
 <!-- Add Google Maps -->
 <div id="googleMap"></div>
 <script>
-  sr.reveal('#fancyContainer', { delay: 400, scale: 0.5, reset: true});
+  sr.reveal('#fancyContainer1', { delay: 200, scale: 0.5, reset: true});
+  sr.reveal('#fancyContainer2', { delay: 400, scale: 0.5, reset: true});
+  sr.reveal('#fancyContainer3', { delay: 600, scale: 0.5, reset: true});
   sr.reveal('#fancyTitle', { delay: 250, scale: 0.5, reset: true});
-  sr.reveal('#fancyLinks', { delay: 400, scale: 0.5, reset: true});
+  sr.reveal('#fancyLinks1', { delay: 200, scale: 0.5, reset: true});
+  sr.reveal('#fancyLinks2', { delay: 400, scale: 0.5, reset: true});
+  sr.reveal('#fancyLinks3', { delay: 600, scale: 0.5, reset: true});
 </script>
 </body>
 </html>

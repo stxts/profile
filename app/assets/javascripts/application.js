@@ -57,8 +57,6 @@ $(document).ready(function(){
 
 // googleMap
 
-
-
 function initialize() {
 var myCenter = new google.maps.LatLng(37.7749, -122.4194);		
 var mapProp = {
@@ -80,3 +78,7 @@ marker.setMap(map);
 
 google.maps.event.addDomListener(window, 'load', initialize);
 }
+
+// scroll reveal
+
+window.sr = ScrollReveal();

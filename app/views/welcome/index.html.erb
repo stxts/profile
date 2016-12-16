@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAATsKINXzNlXVV7U8VK7pzfY-SWXL3L1I"></script>
+<%= render 'layouts/header' %>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="initialize()">
 
@@ -45,6 +40,7 @@
   </div>
 </div>
 
+<!-- Third Container -->
 <div id='where' class="container-fluid bg-3 text-center">
   <h3 class="margin">Where Is My LinkedIn, GitHub, & Resume?</h3>
   <div class="row">
@@ -63,8 +59,10 @@
   </div>
 </div>
 
-<!-- Add Google Maps -->
+<!-- Google Maps -->
 <div id="googleMap"></div>
+
+<!-- Javascript -->
 <script>
   sr.reveal('#fancyContainer1', { delay: 200, scale: 0.5, reset: true});
   sr.reveal('#fancyContainer2', { delay: 300, scale: 0.5, reset: true});
@@ -74,5 +72,7 @@
   sr.reveal('#fancyLinks2', { delay: 300, scale: 0.5, reset: true});
   sr.reveal('#fancyLinks3', { delay: 400, scale: 0.5, reset: true});
 </script>
+
 </body>
+<%= render 'layouts/footer' %> 
 </html>

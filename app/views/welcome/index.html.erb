@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+<!-- Header -->
 <%= render 'layouts/header' %>
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="initialize()">
 
 <!-- Navbar -->
 <%= render 'layouts/navbar' %> 
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="initialize()">
 
 <!-- First Container -->
 <div id='who' class="container-fluid bg-1 text-center">
@@ -35,7 +36,7 @@
     </div>
     <div class="col-sm-4"> 
       <img src="https://s3.amazonaws.com/stxts-profile/csharp.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyContainer3">
-      <p>C# .NET MVC for Work<br/>Visual Studio</p><br/>
+      <p>C# .NET MVC for Web Dev<br/>Visual Studio / ReSharper</p><br/>
     </div>
   </div>
 </div>
@@ -67,12 +68,13 @@
   sr.reveal('#fancyContainer1', { delay: 200, scale: 0.5, reset: true});
   sr.reveal('#fancyContainer2', { delay: 300, scale: 0.5, reset: true});
   sr.reveal('#fancyContainer3', { delay: 400, scale: 0.5, reset: true});
-  sr.reveal('#fancyTitle', { delay: 250, scale: 0.5, reset: true});
+  sr.reveal('#fancyTitle', { delay: 150, scale: 0.5, reset: true});
   sr.reveal('#fancyLinks1', { delay: 200, scale: 0.5, reset: true});
   sr.reveal('#fancyLinks2', { delay: 300, scale: 0.5, reset: true});
   sr.reveal('#fancyLinks3', { delay: 400, scale: 0.5, reset: true});
 </script>
-
 </body>
+
+<!-- Footer -->
 <%= render 'layouts/footer' %> 
 </html>

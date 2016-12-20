@@ -1,80 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<!-- Header -->
-<%= render 'layouts/header' %>
-
-<!-- Navbar -->
-<%= render 'layouts/navbar' %> 
-
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="initialize()">
 
-<!-- First Container -->
-<div id='who' class="container-fluid bg-1 text-center">
-  <h3>Who Am I?</h3><br/>
-      <img src="https://s3.amazonaws.com/stxts-profile/FullSizeRender.jpg" class="img-responsive img-circle" id="profile-pic" alt="ST" width="350" height="350">
-      <h2><strong>Songtham Tungkitkancharoen</strong></h2>
-      <hr>
-  <div class="parent" id="fancyTitle">
-    <span class="big">Software Engineer</span>
-    <span class="small">x</span>
-    <span class="big">Full Stack Developer</span>
-  </div>
-</div>
-
-<!-- Second Container -->
-<div id='what' class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Programming Languages Do I Use?</h3>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="https://s3.amazonaws.com/stxts-profile/python.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyContainer1">
-      <p>Python for ETL & Data Manipulation<br/> Crawling + Scraping</p><br/>
-    </div>
-    <div class="col-sm-4"> 
-      <img src="https://s3.amazonaws.com/stxts-profile/ruby.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyContainer2">
-      <p>Ruby on Rails for Personal Projects<br/> HTML + CSS + Javascript</p><br/>
-    </div>
-    <div class="col-sm-4"> 
-      <img src="https://s3.amazonaws.com/stxts-profile/csharp.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyContainer3">
-      <p>C# .NET MVC for Web Dev<br/>Visual Studio / ReSharper</p><br/>
+  <!-- First Container -->
+  <div id='who' class="container-fluid bg-1 text-center">
+    <h3>Who Am I?</h3><br/>
+        <img src="https://s3.amazonaws.com/stxts-profile/FullSizeRender.jpg" class="img-responsive img-circle" id="profile-pic" alt="ST" width="350" height="350">
+        <h2><strong>Songtham Tungkitkancharoen</strong></h2>
+        <hr>
+    <div class="parent" id="fancyTitle">
+      <span class="big">Software Engineer</span>
+      <span class="small">x</span>
+      <span class="big">Full Stack Developer</span>
     </div>
   </div>
-</div>
 
-<!-- Third Container -->
-<div id='where' class="container-fluid bg-3 text-center">
-  <h3 class="margin">Where Is My LinkedIn, GitHub, & Resume?</h3>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="https://s3.amazonaws.com/stxts-profile/Linkedin_Shiny_Icon.svg_.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyLinks1"><br/>
-      <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/stxts" role="button">LinkedIn</a><br/><br/>
+  <!-- Second Container -->
+  <div id='what' class="container-fluid bg-2 text-center">
+    <h3 class="margin">What is my Programming Toolkit?</h3>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <img src="https://s3.amazonaws.com/stxts-profile/python.png" class="img-rounded margin" alt="Image" height="200" width="200" id="fancyContainer1">
+        <h4>Python</h4>
+        <p>Crawling/Scraping/ETL</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="https://s3.amazonaws.com/stxts-profile/ruby.png" class="img-rounded margin" alt="Image" height="200" width="200" id="fancyContainer2">
+        <h4>Ruby on Rails</h4>
+        <p>Personal Projects (Like this site)</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="https://s3.amazonaws.com/stxts-profile/csharp.png" class="img-rounded margin" alt="Image" height="200" width="200" id="fancyContainer3">
+        <h4>C# .NET MVC</h4>
+        <p>Professional Web Development</p>
+      </div>
     </div>
-    <div class="col-sm-4"> 
-      <img src="https://s3.amazonaws.com/stxts-profile/25231.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyLinks2"><br/>
-      <a class="btn btn-warning btn-lg" href="https://www.github.com/stxts" role="button">GitHub</a><br/><br/>
-    </div>
-    <div class="col-sm-4"> 
-      <img src="https://s3.amazonaws.com/stxts-profile/resume-icon-png-10.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyLinks3"><br/>
-      <a class="btn btn-default btn-lg" href="https://s3.amazonaws.com/stxts-profile/st_resume.pdf" role="button">Resume</a>
+    <br><br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <img src="https://s3.amazonaws.com/stxts-profile/Code_logo.png" class="img-rounded margin" alt="Image" height="200" width="200" id="fancyContainer4">
+        <h4>Coding Principles</h4>
+        <p>AGILE OOP MVC DRY KISS</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="https://s3.amazonaws.com/stxts-profile/Html-Css-Js.png" class="img-rounded margin" alt="Image" height="200" width="200" id="fancyContainer5">
+        <h4>HTML/CSS/Javascript</h4>
+        <p>Frontend Fundamentals</p>
+      </div>
+      
+      <div class="col-sm-4">
+        <img src="https://s3.amazonaws.com/stxts-profile/database.png" class="img-rounded margin" alt="Image" height="200" width="200" id="fancyContainer6">
+        <h4>RDBMS - Database</h4>
+        <p>MSSQL, MySQL, PostGreSQL</p>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Google Maps -->
-<div id="googleMap"></div>
+  <!-- Third Container -->
+  <div id='where' class="container-fluid bg-3 text-center">
+    <h3 class="margin">Where is my LinkedIn, GitHub, & Resume?</h3>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="https://s3.amazonaws.com/stxts-profile/Linkedin_Shiny_Icon.svg_.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyLinks1"><br/>
+        <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/stxts" role="button">LinkedIn</a><br/><br/>
+      </div>
+      <div class="col-sm-4"> 
+        <img src="https://s3.amazonaws.com/stxts-profile/25231.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyLinks2"><br/>
+        <a class="btn btn-warning btn-lg" href="https://www.github.com/stxts" role="button">GitHub</a><br/><br/>
+      </div>
+      <div class="col-sm-4"> 
+        <img src="https://s3.amazonaws.com/stxts-profile/resume-icon-png-10.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyLinks3"><br/>
+        <a class="btn btn-default btn-lg" href="https://s3.amazonaws.com/stxts-profile/st_resume.pdf" role="button">Resume</a>
+      </div>
+    </div>
+  </div>
 
-<!-- Javascript -->
-<script>
-  sr.reveal('#fancyContainer1', { delay: 200, scale: 0.5, reset: true});
-  sr.reveal('#fancyContainer2', { delay: 300, scale: 0.5, reset: true});
-  sr.reveal('#fancyContainer3', { delay: 400, scale: 0.5, reset: true});
-  sr.reveal('#fancyTitle', { delay: 150, scale: 0.5, reset: true});
-  sr.reveal('#fancyLinks1', { delay: 200, scale: 0.5, reset: true});
-  sr.reveal('#fancyLinks2', { delay: 300, scale: 0.5, reset: true});
-  sr.reveal('#fancyLinks3', { delay: 400, scale: 0.5, reset: true});
-</script>
+  <!-- Google Maps -->
+  <div id="googleMap"></div>
+
+  <!-- Javascript -->
+  <script>
+    sr.reveal('#fancyContainer1', { delay: 200, scale: 0.5 });
+    sr.reveal('#fancyContainer2', { delay: 300, scale: 0.5 });
+    sr.reveal('#fancyContainer3', { delay: 400, scale: 0.5 });
+    sr.reveal('#fancyContainer4', { delay: 200, scale: 0.5 });
+    sr.reveal('#fancyContainer5', { delay: 300, scale: 0.5 });
+    sr.reveal('#fancyContainer6', { delay: 400, scale: 0.5 });
+    sr.reveal('#fancyTitle', { delay: 250, scale: 0.5 });
+    sr.reveal('#fancyLinks1', { delay: 200, scale: 0.5 });
+    sr.reveal('#fancyLinks2', { delay: 300, scale: 0.5 });
+    sr.reveal('#fancyLinks3', { delay: 400, scale: 0.5 });
+
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 </body>
-
-<!-- Footer -->
-<%= render 'layouts/footer' %> 
-</html>

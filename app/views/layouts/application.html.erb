@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Songtham's Profile</title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <!-- Header -->
+  <%= render 'layouts/header' %>
+
+  <!-- Navbar -->
+  <%= render 'layouts/navbar' %> 
   
   <body>
     <%= yield %>
   </body>
 
+  <!-- Footer -->
+  <%= render 'layouts/footer' %> 
 </html>

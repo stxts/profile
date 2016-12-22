@@ -18,17 +18,17 @@
     <h3 class="margin">What is my Programming Toolkit?</h3>
     <div class="row slideanim">
       <div class="col-sm-4">
-        <img src="https://s3.amazonaws.com/stxts-profile/python.png" class="img-rounded margin" alt="Image" height="200" width="200" id="fancyContainer1">
+        <img src="https://s3.amazonaws.com/stxts-profile/python.png" class="img-rounded margin fancyContainer" alt="Python" height="200" width="200">
         <h4>Python</h4>
         <p>Crawling/Scraping/ETL</p>
       </div>
       <div class="col-sm-4">
-        <img src="https://s3.amazonaws.com/stxts-profile/ruby.png" class="img-rounded margin" alt="Image" height="200" width="200" id="fancyContainer2">
+        <img src="https://s3.amazonaws.com/stxts-profile/ruby.png" class="img-rounded margin fancyContainer" alt="Ruby" height="200" width="200">
         <h4>Ruby on Rails</h4>
         <p>Personal Projects (Like this site)</p>
       </div>
       <div class="col-sm-4">
-        <img src="https://s3.amazonaws.com/stxts-profile/csharp.png" class="img-rounded margin" alt="Image" height="200" width="200" id="fancyContainer3">
+        <img src="https://s3.amazonaws.com/stxts-profile/csharp.png" class="img-rounded margin fancyContainer" alt="Csharp" height="200" width="200">
         <h4>C# .NET MVC</h4>
         <p>Professional Web Development</p>
       </div>
@@ -36,17 +36,17 @@
     <br>
     <div class="row slideanim">
       <div class="col-sm-4">
-        <img src="https://s3.amazonaws.com/stxts-profile/Code_logo.png" class="img-rounded margin" alt="Image" height="200" width="200" id="fancyContainer4">
+        <img src="https://s3.amazonaws.com/stxts-profile/Code_logo.png" class="img-rounded margin fancyContainer" alt="Code_Logo" height="200" width="200">
         <h4>Coding Principles</h4>
         <p>AGILE OOP MVC DRY KISS</p>
       </div>
       <div class="col-sm-4">
-        <img src="https://s3.amazonaws.com/stxts-profile/Html-Css-Js.png" class="img-rounded margin" alt="Image" height="200" width="200" id="fancyContainer5">
+        <img src="https://s3.amazonaws.com/stxts-profile/Html-Css-Js.png" class="img-rounded margin fancyContainer" alt="HTML-CSS-JS" height="200" width="200">
         <h4>HTML/CSS/Javascript</h4>
         <p>Frontend Fundamentals</p>
       </div>
       <div class="col-sm-4">
-        <img src="https://s3.amazonaws.com/stxts-profile/database.png" class="img-rounded margin" alt="Image" height="200" width="200" id="fancyContainer6">
+        <img src="https://s3.amazonaws.com/stxts-profile/database.png" class="img-rounded margin fancyContainer" alt="SQL" height="200" width="200">
         <h4>RDBMS - Database</h4>
         <p>MSSQL, MySQL, PostGreSQL</p>
       </div>
@@ -58,15 +58,15 @@
     <h3 class="margin">Where is my LinkedIn, GitHub, & Resume?</h3>
     <div class="row">
       <div class="col-sm-4">
-        <img src="https://s3.amazonaws.com/stxts-profile/Linkedin_Shiny_Icon.svg_.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyLinks1"><br/>
+        <img src="https://s3.amazonaws.com/stxts-profile/Linkedin_Shiny_Icon.svg_.png" class="img-rounded margin fancyLinks" alt="LinkedIn" height="300" width="300"><br/>
         <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/stxts" role="button">LinkedIn</a><br/><br/>
       </div>
       <div class="col-sm-4"> 
-        <img src="https://s3.amazonaws.com/stxts-profile/25231.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyLinks2"><br/>
+        <img src="https://s3.amazonaws.com/stxts-profile/25231.png" class="img-rounded margin fancyLinks" alt="GitHub" height="300" width="300"><br/>
         <a class="btn btn-warning btn-lg" href="https://www.github.com/stxts" role="button">GitHub</a><br/><br/>
       </div>
       <div class="col-sm-4"> 
-        <img src="https://s3.amazonaws.com/stxts-profile/resume-icon-png-10.png" class="img-rounded margin" alt="Image" height="300" width="300" id="fancyLinks3"><br/>
+        <img src="https://s3.amazonaws.com/stxts-profile/resume-icon-png-10.png" class="img-rounded margin fancyLinks" alt="Resume" height="300" width="300"><br/>
         <a class="btn btn-default btn-lg" href="https://s3.amazonaws.com/stxts-profile/st_resume.pdf" role="button">Resume</a>
       </div>
     </div>
@@ -77,15 +77,8 @@
 
   <!-- Javascript -->
   <script>
-    sr.reveal('#fancyContainer1', { delay: 200, scale: 0.5 });
-    sr.reveal('#fancyContainer2', { delay: 250, scale: 0.5 });
-    sr.reveal('#fancyContainer3', { delay: 300, scale: 0.5 });
-    sr.reveal('#fancyContainer4', { delay: 200, scale: 0.5 });
-    sr.reveal('#fancyContainer5', { delay: 250, scale: 0.5 });
-    sr.reveal('#fancyContainer6', { delay: 300, scale: 0.5 });
-    sr.reveal('#fancyLinks1', { delay: 200, scale: 0.5 });
-    sr.reveal('#fancyLinks2', { delay: 250, scale: 0.5 });
-    sr.reveal('#fancyLinks3', { delay: 300, scale: 0.5 });
-    sr.reveal('#fancyTitle', { delay: 250, scale: 0.5 });
+    sr.reveal('.fancyContainer', { delay: 200, scale: 0.5, rotate: { x: 10, y: 20, z: 30 } });
+    sr.reveal('.fancyLinks', { delay: 200, scale: 0.5 });
+    sr.reveal('#fancyTitle', { delay: 250, scale: 0.5, origin: 'left', distance: '1000px' });
   </script>
 </body>

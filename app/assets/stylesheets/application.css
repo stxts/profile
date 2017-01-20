@@ -182,3 +182,21 @@ hr.star-grey:after {
   background-color: #474e5d;
   color: white;
 }
+
+.img-div{
+  position:relative; 
+}
+.img-div:hover:after{
+    content:'';
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    content: "\f00e";
+    font-family: FontAwesome;
+    display: inline-block;
+    text-align: center;
+}
+
+.img-div:hover img{opacity: 0.4;}

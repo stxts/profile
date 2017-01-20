@@ -20,7 +20,7 @@
       color: #f5f6f7;
   }
   p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
+  .margin {margin-bottom: 20px;}
   .bg-1 { 
       background-color: #1abc9c; /* Green */
       color: #ffffff;
@@ -91,7 +91,8 @@ hr {
 }
 
 .big {
-    font-size: 17px;
+    font-size: 1.25em;
+    font-weight: 400;
     font-style: italic;   
 }
 
@@ -135,4 +136,50 @@ phone {
   color: #18BC9C;
   background: white;
   border: solid 2px white;
+}
+
+hr.star-light,
+hr.star-grey,
+hr.star-primary {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
+hr.star-light:after,
+hr.star-grey:after,
+hr.star-primary:after {
+  content: "\f260";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+hr.star-light {
+  border-color: white;
+}
+hr.star-light:after {
+  background-color: #18BC9C;
+  color: white;
+}
+hr.star-primary {
+  border-color: #555555;
+  color: #555555;
+}
+hr.star-primary:after {
+  background-color: white;
+  color: #555555;
+}
+
+}
+hr.star-grey {
+  color: white;
+}
+hr.star-grey:after {
+  background-color: #474e5d;
+  color: white;
 }

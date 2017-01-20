@@ -90,3 +90,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-89727720-1', 'auto');
 ga('send', 'pageview');
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});

@@ -185,6 +185,8 @@ hr.star-grey:after {
 
 .img-div{
   position:relative; 
+  margin: 0 auto;
+  padding:28px;
 }
 .img-div:hover:after{
     content:'';
@@ -195,6 +197,7 @@ hr.star-grey:after {
     width: 100%;
     content: "\f00e";
     font-family: FontAwesome;
+    font-size: 40px;
     display: inline-block;
     text-align: center;
 }

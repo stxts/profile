@@ -203,3 +203,15 @@ hr.star-grey:after {
 }
 
 .img-div:hover img{opacity: 0.4;}
+
+.modalPic {
+  max-width: 100%;
+}
+
+a.disabled {
+    pointer-events: none;
+}
+
+.modalh2{
+  text-align: center;
+}

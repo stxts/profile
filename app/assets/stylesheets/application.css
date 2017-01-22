@@ -63,7 +63,7 @@
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
+    color: #1abc9c !important;
     background-color: #fff !important;
 }
 

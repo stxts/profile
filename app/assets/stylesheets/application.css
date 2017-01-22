@@ -215,3 +215,17 @@ a.disabled {
 .modalh2{
   text-align: center;
 }
+
+#modalxfooter{
+  background-color: #ededed;
+}
+#modalxfooterxlink {
+  float: left;
+}
+#modalxfooterxdate {
+  float: right;
+}
+#modalxbody{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}

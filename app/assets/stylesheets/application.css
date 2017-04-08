@@ -24,6 +24,7 @@
   .bg-1 { 
       background-color: #1abc9c; /* Green */
       color: #ffffff;
+      padding-bottom: 10px !important;
   }
   .bg-2 { 
       background-color: #474e5d; /* Dark Blue */
@@ -230,7 +231,7 @@ a.disabled {
     padding-bottom: 0px;
 }
 
-#footerx {
+#contact {
   padding-top: 70px;
   padding-bottom: 30px;
 }
@@ -246,4 +247,9 @@ footer .footer-below {
 
 #footerxcopyright{
   color: white;
+}
+
+#title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
 }

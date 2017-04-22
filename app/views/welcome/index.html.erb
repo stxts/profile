@@ -3,10 +3,15 @@
   <!-- First Container -->
   <div id='about' class="container-fluid bg-1 text-center">
         <img src="https://s3.amazonaws.com/stxts-profile/FullSizeRender.jpg" class="img-responsive img-circle" id="profile-pic" alt="ST" width="350" height="350">
+        <div class="animated rubberBand">
         <h2><strong>Songtham Tungkitkancharoen</strong></h2>
+        </div>
         <hr class="star-light">
-    <div class="parent" id="fancyTitle">
+    <div class="parent">
+    <div class="animated zoomIn wow" >
       <span id="title">Full Stack Web Developer</span>
+    </div>
+    <div class="animated pulse wow" data-wow-iteration="2">
       <br><br>
       <p>
       <img src="https://s3.amazonaws.com/stxts-profile/ruby.png" class="img-rounded margin" alt="Ruby" height="50" width="50" data-toggle="tooltip" title="Ruby on Rails" data-placement="bottom">
@@ -16,6 +21,7 @@
       <img src="https://s3.amazonaws.com/stxts-profile/Html-Css-Js.png" class="img-rounded margin" alt="Html-Css-Js" height="50" width="50" data-toggle="tooltip" title="HTML/CSS/Javascript" data-placement="bottom">
       <img src="https://s3.amazonaws.com/stxts-profile/database.png" class="img-rounded margin" alt="SQL" height="50" width="50" data-toggle="tooltip" title="SQL/RDBMS" data-placement="bottom">
       </p>
+      </div>
     </div>
   </div>
 
@@ -24,7 +30,7 @@
     <h2 class="margin">Portfolio</h2>
     <hr class="star-primary">
      <span><i>Click below to learn more!</i></span><br><br>
-    <div class="fancyLinks">
+    <div class="animated pulse wow" data-wow-offset="5"  data-wow-iteration="2" data-wow-delay="2s">
     <div class="row">
       <div class="col-sm-4">
       <a href="#" data-toggle="modal" class="img-div" data-target="#WeatherxSTxModal">
@@ -62,8 +68,6 @@
 
   <!-- Javascript -->
   <script>
-    sr.reveal('.fancyContainer', { delay: 150, scale: 0.5, rotate: { x: 10, y: 20, z: 30 } });
-    sr.reveal('.fancyLinks', { delay: 150, scale: 0.5 });
-    sr.reveal('#fancyTitle', { delay: 150, scale: 0.5, origin: 'left', distance: '1000px' });
+    
   </script>
 </body>

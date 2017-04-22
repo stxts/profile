@@ -76,9 +76,8 @@ marker.setMap(map);
 google.maps.event.addDomListener(window, 'load', initialize);
 }
 
-// scroll reveal
-
-window.sr = ScrollReveal();
+// WOW 
+new WOW().init();
 
 
 // Google Analytics

@@ -152,7 +152,7 @@ hr.star-primary {
 hr.star-light:after,
 hr.star-grey:after,
 hr.star-primary:after {
-  content: "\f260";
+  content: "\f1ee";
   font-family: FontAwesome;
   display: inline-block;
   position: relative;
@@ -164,7 +164,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #18BC9C;
+  background-color: transparent;
   color: white;
 }
 hr.star-primary {
@@ -172,7 +172,7 @@ hr.star-primary {
   color: #555555;
 }
 hr.star-primary:after {
-  background-color: white;
+  background-color: transparent;
   color: #555555;
 }
 
@@ -252,4 +252,18 @@ footer .footer-below {
 #title {
   font-family: 'Allerta Stencil', sans-serif;
   font-size: 25px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://s3.amazonaws.com/stxts-profile/airplane_bg.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

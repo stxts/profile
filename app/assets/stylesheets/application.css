@@ -267,3 +267,7 @@ footer .footer-below {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.whitefont {
+  color: white;
+}

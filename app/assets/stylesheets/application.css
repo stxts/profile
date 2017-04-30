@@ -44,8 +44,11 @@
       color: #fff;
   }
   .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
+      
+  }
+  .cf {
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
   .navbar {
     width: 100%;
@@ -63,9 +66,6 @@
     color:  !important;
 }
 
-.navbar-left {
-  margin-left: 10px;
-}
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #1abc9c !important;

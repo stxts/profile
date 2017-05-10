@@ -98,7 +98,7 @@ $(document).ready(function(){
 jQuery(function($, undefined) {
     $('#st_terminal').terminal(function(command) {
           if (command == 'about') {
-              this.echo("Name: Songtham Tungkitkancharoen\nAge: 25\nCity: San Francisco\nSchool: UC San Diego '14\nDegree: B.A. Sociology w/ High Honors\nOccupation: Software Engineer\nTech: C# .NET, AngularJS, Ruby on Rails, Python, SQL");
+              this.echo("Name: Songtham Tungkitkancharoen\nAge: 25\nCity: San Francisco\nSchool: UC San Diego '14\nDegree: B.A. Sociology w/ High Honors\nOccupation: Software Engineer\nTech: C# .NET, AngularJS, Ruby on Rails, Python, SQL\nType [[b;#1abc9c;<BACKGROUND>;]help] to see a list of available commands");
           }
           else if (command == 'who') {
               this.echo("Songtham Tungkitkancharoen");
@@ -124,8 +124,11 @@ jQuery(function($, undefined) {
           else if (command == 'quotes') {
               this.echo("'The journey of a thousand miles begins with a single step' — Lao Tzu");
           }
+          else if (command == 'countries') {
+              this.echo("USA\nEngland\nItaly\nFrance\nSpain\nGreece\nMalta\nTurkey\nPortugal\nMorocco\nCanada\nThailand\nJapan\nChina");
+          }
           else if (command == 'help') {
-              this.echo("[[b;#1abc9c;<BACKGROUND>;]about] — summary\n[[b;#1abc9c;<BACKGROUND>;]who] — I am\n[[b;#1abc9c;<BACKGROUND>;]what] — I do\n[[b;#1abc9c;<BACKGROUND>;]where] — I live\n[[b;#1abc9c;<BACKGROUND>;]when] — I started\n[[b;#1abc9c;<BACKGROUND>;]why] — I code\n[[b;#1abc9c;<BACKGROUND>;]how] — I learned\n[[b;#1abc9c;<BACKGROUND>;]books] — a list of some of my favorite books\n[[b;#1abc9c;<BACKGROUND>;]quotes] — a list of some of my favorite quotes\n[[b;#1abc9c;<BACKGROUND>;]1+1] — built-in calculator\n[[b;#1abc9c;<BACKGROUND>;]clear] — clear terminal");
+              this.echo("who — I am\nwhat — I do\nwhere — I live\nwhen — I started\nwhy — I code\nhow — I learned\nabout — summary\nbooks — a list of some of my favorite books\ncountries — a list of places I've visited\nquotes — a list of some of my favorite quotes\nclear — clear terminal");
           }
            else if (command !== '') {
             try {

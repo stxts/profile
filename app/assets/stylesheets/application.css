@@ -267,7 +267,6 @@ footer .footer-below {
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: 100% 120%;
     background-repeat: no-repeat;
     background-size: cover;
 }

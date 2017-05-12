@@ -97,40 +97,34 @@ $(document).ready(function(){
 
 jQuery(function($, undefined) {
     $('#st_terminal').terminal(function(command) {
-          if (command == 'about') {
-              this.echo("Name: Songtham Tungkitkancharoen\nAge: 25\nCity: San Francisco\nSchool: UC San Diego '14\nDegree: B.A. Sociology w/ High Honors\nOccupation: Software Engineer\nTech: C# .NET, AngularJS, Ruby on Rails, Python, SQL\nType [[b;#1abc9c;<BACKGROUND>;]help] to see a list of available commands");
+          if (command.toLowerCase() == 'about') {
+              this.echo("Name: Songtham Tungkitkancharoen\nAge: 25\nCity: San Francisco\nSchool: UC San Diego '14\nDegree: B.A. Sociology w/ High Honors Distinction\nOccupation: Software Engineer\nTech: C# .NET, AngularJS, Ruby on Rails, Python, SQL");
           }
-          else if (command == 'who') {
-              this.echo("Songtham Tungkitkancharoen");
+          else if (command.toLowerCase() == 'books') {
+              this.echo("48 Laws of Power — Robert Greene\nBe Here Now — Ram Dass\nHow to Eat — Thich Nhat Hanh\nReWork — Jason Fried & David Hansson\nShantaram — Gregory David Roberts\nSoft Skills: the Software Developer's Life Manual — John Sonmez\nTao of Wu — RZA\nThe Alchemist — Paulo Coelho\nThe Art of War — Sun Tzu\nThe Four Agreements — Don Miguel Ruiz");
           }
-          else if (command == 'what') {
-              this.echo("Full Stack Web Developer");
-          }
-          else if (command == 'where') {
-              this.echo("San Francisco");
-          }
-          else if (command == 'when') {
-              this.echo("2+ years experience");
-          }
-          else if (command == 'why') {
-              this.echo("I like to create and solve problems. Oh and coding is really fun :)");
-          }
-          else if (command == 'how') {
-              this.echo("Self Taught");
-          }
-          else if (command == 'books') {
-              this.echo("Shantaram — Gregory David Roberts\nThe Four Agreements — Don Miguel Ruiz\nThe Alchemist — Paulo Coelho\nTao of Wu — RZA");
-          }
-          else if (command == 'quotes') {
-              this.echo("'The journey of a thousand miles begins with a single step' — Lao Tzu");
-          }
-          else if (command == 'countries') {
+          else if (command.toLowerCase() == 'countries') {
               this.echo("USA\nEngland\nItaly\nFrance\nSpain\nGreece\nMalta\nTurkey\nPortugal\nMorocco\nCanada\nThailand\nJapan\nChina");
           }
-          else if (command == 'help') {
-              this.echo("who — I am\nwhat — I do\nwhere — I live\nwhen — I started\nwhy — I code\nhow — I learned\nabout — summary\nbooks — a list of some of my favorite books\ncountries — a list of places I've visited\nquotes — a list of some of my favorite quotes\nclear — clear terminal");
+          else if (command.toLowerCase() == 'quotes') {
+              this.echo("Be the change that you wish to see in the world — Mahatma Gandhi\nGive a man a fish feed him for a day; teach a man to fish feed him for life — Ancient Proverb\nIf you can't explain it simply, you don't understand it well enough — Albert Einstein\nThe man who says he can and the man who says he cannot are both correct — Confucius\nThe journey of a thousand miles begins with a single step — Lao Tzu\nYou miss 100% of the shots you don't take — Wayne Gretzky\nToday you are you, that is truer than true, there is no one alive who is you-er than you! — Dr. Seuss");
           }
-           else if (command !== '') {
+          else if (command.toLowerCase() == 'resume')
+          {
+              this.echo("[[!;;;;https://s3.amazonaws.com/stxts-profile/st_resume.pdf]https://s3.amazonaws.com/stxts-profile/st_resume.pdf]")
+          }
+          else if (command.toLowerCase() == 'linkedin')
+          {
+              this.echo("[[!;;;;https://www.linkedin.com/in/stxts]https://www.linkedin.com/in/stxts]")
+          }
+          else if (command.toLowerCase() == 'github')
+          {
+              this.echo("[[!;;;;https://www.github.com/stxts]https://www.github.com/stxts]")
+          }
+          else if (command.toLowerCase() == 'help') {
+              this.echo("about — about me\nbooks — a list of some of my favorite books\ncountries — a list of places I've visited\nquotes — a list of some of my favorite quotes\ngithub — link to my github\nlinkedin — link to my linkedin\nresume — link to my resume\nclear — clear terminal");
+          }
+          else if (command !== '') {
             try {
                 var result = window.eval(command);
                 if (result !== undefined) {
@@ -140,14 +134,12 @@ jQuery(function($, undefined) {
                 this.error(new String(e));
                 this.echo(new String("Type [[b;#1abc9c;<BACKGROUND>;]help] to see a list of available commands"));
             }
-        } else {
-           this.echo('');
-        }
+          }
     }, {
-        greetings: 'Welcome to www.songthamtung.com ~\nType [[b;#1abc9c;<BACKGROUND>;]about] to get started!',
+        greetings: 'Welcome to www.songthamtung.com!\nType [[b;#1abc9c;<BACKGROUND>;]help] to see a list of available commands',
         name: 'st_terminal',
         height: 200,
         prompt: '>_ST ',
-        convertLinks: false
+        convertLinks: true
     });
 });

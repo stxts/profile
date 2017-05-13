@@ -107,7 +107,7 @@ jQuery(function($, undefined) {
               this.echo("USA\nEngland\nItaly\nFrance\nSpain\nGreece\nMalta\nTurkey\nPortugal\nMorocco\nCanada\nThailand\nJapan\nChina");
           }
           else if (command.toLowerCase() == 'quotes') {
-              this.echo("Be the change that you wish to see in the world — Mahatma Gandhi\nGive a man a fish feed him for a day; teach a man to fish feed him for life — Ancient Proverb\nIf you can't explain it simply, you don't understand it well enough — Albert Einstein\nThe man who says he can and the man who says he cannot are both correct — Confucius\nThe journey of a thousand miles begins with a single step — Lao Tzu\nYou miss 100% of the shots you don't take — Wayne Gretzky\nToday you are you, that is truer than true, there is no one alive who is you-er than you! — Dr. Seuss");
+              this.echo("Be the change that you wish to see in the world\n— Mahatma Gandhi\n\nGive a man a fish feed him for a day; teach a man to fish feed him for life\n— Ancient Proverb\n\nIf you can't explain it simply, you don't understand it well enough\n— Albert Einstein\n\nThe man who says he can and the man who says he cannot are both correct\n— Confucius\n\nThe journey of a thousand miles begins with a single step\n— Lao Tzu\n\nYou miss 100% of the shots you don't take\n— Wayne Gretzky\n\nToday you are you, that is truer than true, there is no one alive who is you-er than you!\n— Dr. Seuss");
           }
           else if (command.toLowerCase() == 'resume')
           {

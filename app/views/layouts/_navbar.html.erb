@@ -1,20 +1,37 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a href="#" data-toggle="modal" data-target="#navy"><img src="https://s3.amazonaws.com/stxts-profile/st_logo.png" alt="STXTS" height="50"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<a href="#cd-nav" class="cd-nav-trigger">Menu 
+  <span class="cd-nav-icon"></span>
+  <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+      <circle fill="transparent" stroke="#90D4C5" stroke-width="2" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+  </svg>
+</a>
 
+<div id="cd-nav" class="cd-nav">
+    <div class="cd-navigation-wrapper">
+        <div class="cd-half-block">
+            <nav>
+                <ul class="cd-primary-nav">
+                    <li><a href="/" class="selected">Home</a></li>
+                    <%# <li><a href="#">Profile</a></li> %>
+                    <li><a href="https://s3.amazonaws.com/stxts-profile/st_resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div> 
+        <div class="cd-half-block">
+            <address>
+             <i> 
+                <ul class="cd-contact-info">
+                    <li><a href="mailto:songthamtung@gmail.com">Songthamtung@gmail.com</a></li>
+                    <li>415-283-7841</li>
+                </ul>
+                <ul class="cd-contact-socials">
+                    <li>
+                     <a href="https://www.linkedin.com/in/stxts" target="_blank" class="btn-social btn-outline" data-toggle="tooltip" title="" data-original-title="LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>
+                     <a href="https://www.github.com/stxts" target="_blank" class="btn-social btn-outline" data-toggle="tooltip" title="" data-original-title="GitHub"><i class="fa fa-fw fa-github"></i></a> 
+                     <a href="https://www.twitter.com/songthamtung" target="_blank" class="btn-social btn-outline" data-toggle="tooltip" title="" data-original-title="Twitter"><i class="fa fa-fw fa-twitter"></i></a></li>
+                </ul>
+              </i>
+            </address>
+        </div>
+    </div>
+</div>
+ 

@@ -1,64 +1,218 @@
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="initialize()">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<body>  
 
-  <!-- First Container -->
-  <div id='about' class="container-fluid cf parallax text-center">
-        <img src="https://s3.amazonaws.com/stxts-profile/FullSizeRender.jpg" class="img-responsive img-circle" id="profile-pic" alt="ST" width="350" height="350">
-        <h2><strong class="whitefont">Songtham Tungkitkancharoen</strong></h2>
-        <hr class="star-light">
-    <div class="parent">
-    <div class="animated flipInX wow" >
-      <span id="title" class="whitefont">Full Stack Web Developer</span>
-    </div>
-      <br>
-      <p>
-      <img src="https://s3.amazonaws.com/stxts-profile/ruby.png" class="img-rounded margin" alt="Ruby" height="50" width="50" data-toggle="tooltip" title="Ruby on Rails" data-placement="bottom">
-      <img src="https://s3.amazonaws.com/stxts-profile/python.png" class="img-rounded margin" alt="Python" height="50" width="50" data-toggle="tooltip" title="Python" data-placement="bottom">
-      <img src="https://s3.amazonaws.com/stxts-profile/csharp.png" class="img-rounded margin" alt="C#" height="50" width="50" data-toggle="tooltip" title="C#" data-placement="bottom">
-      <img src="https://s3.amazonaws.com/stxts-profile/AngularJS.png" class="img-rounded margin" alt="Angular4" height="50" width="50" data-toggle="tooltip" title="Angular4" data-placement="bottom">
-      <img src="https://s3.amazonaws.com/stxts-profile/Html-Css-Js.png" class="img-rounded margin" alt="Html-Css-Js" height="50" width="50" data-toggle="tooltip" title="HTML/CSS/Javascript" data-placement="bottom">
-      <img src="https://s3.amazonaws.com/stxts-profile/database.png" class="img-rounded margin" alt="SQL" height="50" width="50" data-toggle="tooltip" title="SQL/RDBMS" data-placement="bottom">
-      </p>
-    </div>
-  </div>
+    <div class="site-container">
 
-  <!-- Second Container -->
-  <div id='portfolio' class="container-fluid cf bg-3 text-center">
-    <h2 class="margin">Portfolio</h2>
-    <hr class="star-primary">
-     <span><i>Click below to learn more!</i></span><br><br>
-    <div class="animated pulse wow" data-wow-iteration="2">
-    <div class="row">
-      <div class="col-sm-4">
-      <a href="#" data-toggle="modal" class="img-div" data-target="#WeatherxSTxModal">
-        <img src="https://s3.amazonaws.com/stxts-profile/Weather_logo.png" class="img-rounded margin" alt="Weather_logo" height="200" width="200"></a>
-      </div>
-      <div class="col-sm-4">
-      <a href="#" data-toggle="modal" class="img-div" data-target="#FreelancexSTxModal"> 
-        <img src="https://s3.amazonaws.com/stxts-profile/freelance_logo.png" class="img-rounded margin" alt="Freelance_logo" height="200" width="200"></a>
-      </div>
-      <div class="col-sm-4">
-      <a href="#" data-toggle="modal" class="img-div" data-target="#BKExModal">
-        <img src="https://s3.amazonaws.com/stxts-profile/BKE_logo.png" class="img-rounded margin" alt="STTS_logo" height="200" width="200"></a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-      <a href="#" data-toggle="modal" class="img-div" data-target="#PinterestedxSTxModal">
-        <img src="https://s3.amazonaws.com/stxts-profile/PinterestedxST_logo.png" class="img-rounded margin" alt="PinterestedxST_logo" height="200" width="200"></a>
-      </div>
-      <div class="col-sm-4">
-      <a href="#" data-toggle="modal" class="img-div" data-target="#CrawlingNinjaxModal"> 
-        <img src="https://s3.amazonaws.com/stxts-profile/crawling_ninja_logo.png" class="img-rounded margin" alt="CrawlingNinja_logo" height="200" width="200"></a>
-      </div>
-      <div class="col-sm-4">
-      <a href="#" data-toggle="modal" class="img-div" data-target="#STTSxModal">
-        <img src="https://s3.amazonaws.com/stxts-profile/st+icon.jpg" class="img-rounded margin" alt="STTS_logo" height="200" width="200"></a>
-      </div>
-      </div>
-    </div>
-  </div>
+        <header class="site-header cf">
 
-  <!-- Google Maps -->
-  <div id="googleMap"></div>
+            <div class="cf"></div>
 
+            <div class="site-tagline">
+                <p>Hi, I'm <strong>Songtham Tung.</strong><br> I'm a Software Engineer at a <span style="color: #90D4C5">FinTech Startup</span>                    in San Francisco, CA. </p>
+            </div>
+
+        </header>
+        <!-- / .site-header -->
+
+        <section class="site-content">
+
+
+            <div class="projects-feed cf">
+
+                <article class="project cf">
+                    <%# <a href="portfolio-item.html" title="Craft Tamale"> %>
+                        <div class="thumb">
+                            <div data-picture data-alt="">
+                                <div data-src="https://s3.amazonaws.com/stxts-profile/portfolio-1.jpg"></div>
+
+                                <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/portfolio-1.jpg"></div>
+                                <![endif]-->
+
+                                <noscript>
+                                    <img src="https://s3.amazonaws.com/stxts-profile/portfolio-1.jpg" alt="" />
+                                </noscript>
+                            </div>
+                        </div>
+
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="thumbnail-title">Machine Learning</h2>
+
+                                        <p class="thumbnail-description">Tesseract OCR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="overlay"></div>
+                    <%# </a> %>
+                </article>
+                <article class="project cf">
+                    <%# <a href="portfolio-item.html" title="IKEA Singapore"> %>
+                        <div class="thumb">
+                            <div data-picture data-alt="">
+                                <div data-src="https://s3.amazonaws.com/stxts-profile/portfolio-2.jpg"></div>
+
+                                <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/portfolio-2.jpg"></div>
+                                <![endif]-->
+
+                                <noscript>
+                                    <img src="https://s3.amazonaws.com/stxts-profile/portfolio-2.jpg" alt="" />
+                                </noscript>
+                            </div>
+                        </div>
+
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="thumbnail-title">C# .NET MVC</h2>
+
+                                        <p class="thumbnail-description">LINQ Entity Framework Hangfire</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="overlay"></div>
+                    <%# </a> %>
+                </article>
+                <article class="project cf">
+                    <%# <a href="portfolio-item.html" title="Comuna"> %>
+                        <div class="thumb">
+                            <div data-picture data-alt="">
+                                <div data-src="https://s3.amazonaws.com/stxts-profile/portfolio-3.jpg"></div>
+
+                                <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/portfolio-3.jpg"></div>
+                                <![endif]-->
+
+                                <noscript>
+                                    <img src="https://s3.amazonaws.com/stxts-profile/portfolio-3.jpg" alt="" />
+                                </noscript>
+                            </div>
+                        </div>
+
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="thumbnail-title">Frontend</h2>
+
+                                        <p class="thumbnail-description">HTML5 CSS3 Javascript jQuery AJAX Angular</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="overlay"></div>
+                    <%# </a> %>
+                </article>
+                <article class="project cf">
+                    <%# <a href="portfolio-item.html" title="Nike 'Strawberry Lace' Pack"> %>
+                        <div class="thumb">
+                            <div data-picture data-alt="">
+                                <div data-src="https://s3.amazonaws.com/stxts-profile/portfolio-4.jpg"></div>
+
+                                <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/portfolio-4.jpg"></div>
+                                <![endif]-->
+
+                                <noscript>
+                                    <img src="https://s3.amazonaws.com/stxts-profile/portfolio-4.jpg" alt="" />
+                                </noscript>
+                            </div>
+                        </div>
+
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="thumbnail-title">Backend</h2>
+
+                                        <p class="thumbnail-description">ETL API SDK Automation </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="overlay"></div>
+                    <%# </a> %>
+                </article>
+                <article class="project cf">
+                    <%# <a href="portfolio-item.html" title="Wearetheshit"> %>
+                        <div class="thumb">
+                            <div data-picture data-alt="">
+                                <div data-src="https://s3.amazonaws.com/stxts-profile/portfolio-5.jpg"></div>
+
+                                <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/portfolio-5.jpg"></div>
+                                <![endif]-->
+
+                                <noscript>
+                                    <img src="https://s3.amazonaws.com/stxts-profile/portfolio-5.jpg" alt="" />
+                                </noscript>
+                            </div>
+                        </div>
+
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="thumbnail-title">RDBMS</h2>
+
+                                        <p class="thumbnail-description">MSSQL MySQL PostgreSQL</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="overlay"></div>
+                    <%# </a> %>
+                </article>
+                <article class="project cf">
+                    <%# <a href="portfolio-item.html" title="Chamba para Creativos"> %>
+                        <div class="thumb">
+                            <div data-picture data-alt="">
+                                <div data-src="https://s3.amazonaws.com/stxts-profile/portfolio-6.jpg"></div>
+
+                                <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/portfolio-6.jpg"></div>
+                                <![endif]-->
+
+                                <noscript>
+                                    <img src="https://s3.amazonaws.com/stxts-profile/portfolio-6.jpg" alt="" />
+                                </noscript>
+                            </div>
+                        </div>
+
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="thumbnail-title">DevOps</h2>
+
+                                        <p class="thumbnail-description">AWS Heroku Gitlab</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="overlay"></div>
+                    <%# </a> %>
+                </article>
+                <!--END .projects-feed-->
+            </div>
+
+            <!--END .site-content-->
+        </section>
+        <!--END .site-container-->
+    </div>
 </body>
+
+</html>
